@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<main>
+  <body>
+    <h1> Gender Finder App </h1>
+
+    <form method = "POST" action="/genderapp">
+    {{ form.hidden_tag() }}
+    <div class = "form-group">
+      {{ form.name.label }}
+      {{ form.name }}
+    </div>
+    {{ form.submit(class = "btn-primary") }}
+  </form>
+</body>
+</main>
